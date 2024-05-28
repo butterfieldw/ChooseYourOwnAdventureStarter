@@ -3,12 +3,14 @@ package com.example.chooseyourownadventurestarter;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Game extends AppCompatActivity {
 
+    private ImageView storyImageView;
     private TextView storyTextView;
     private Button northBtn, southBtn, eastBtn, westBtn;
     private World world;
@@ -28,6 +30,7 @@ public class Game extends AppCompatActivity {
         world.setPlayerPosition(1, 1);
         playerLocation = world.getPlayerLocation();
 
+        storyImageView = findViewById(R.id.storyImageView);
         storyTextView = findViewById(R.id.storyTextView);
         storyTextView.setText(playerLocation.getDescription());
 
@@ -71,6 +74,31 @@ public class Game extends AppCompatActivity {
             world.setPlayerPosition(row, col);
             playerLocation = world.getPlayerLocation();
             storyTextView.setText(playerLocation.toString());
+            updateImage(row, col);
+        }
+    }
+
+    public void updateImage(int row, int col) {
+        if (row == 0 && col == 0) {
+            storyImageView.setImageResource(R.drawable.r0c0);
+        } else if (row == 0 && col == 1) {
+            storyImageView.setImageResource(R.drawable.r0c1);
+        } else if (row == 0 && col == 2) {
+            storyImageView.setImageResource(R.drawable.r0c2);
+        } else if (row == 1 && col == 0) {
+            storyImageView.setImageResource(R.drawable.r1c0);
+        } else if (row == 1 && col == 1) {
+            storyImageView.setImageResource(R.drawable.r1c1);
+        } else if (row == 1 && col == 2) {
+            storyImageView.setImageResource(R.drawable.r1c2);
+        } else if (row == 2 && col == 0) {
+            storyImageView.setImageResource(R.drawable.r2c0);
+        } else if (row == 2 && col == 1) {
+            storyImageView.setImageResource(R.drawable.r2c1);
+        } else if (row == 2 && col == 2) {
+            storyImageView.setImageResource(R.drawable.r2c2);
+        } else {
+            storyImageView.setImageResource(R.drawable.grid);
         }
     }
 }
