@@ -1,7 +1,7 @@
 <resources>
 
-    <string name="app_name">Choose Your Own Adventure</string>
-    <string name="title">Choose Your Own Adventure</string>
+    <string name="app_name">Choose Your Own Adventure!</string>
+    <string name="title">Choose Your Own Adventure!</string>
     <string name="start_button">Start!</string>
     <string name="north">Go North</string>
     <string name="south">Go South</string>
@@ -9,6 +9,7 @@
     <string name="west">Go West</string>
     <string name="image_description">An image of the place in the game.</string>
     <string name="story_text">Story text will go here.</string>
+    <string name="an_image_of_the_player">An image of the player.</string>
 
     <!-- Describing the world to the player:
          The string-array is used to store descriptions of places within the world
