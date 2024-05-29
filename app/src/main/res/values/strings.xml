@@ -16,19 +16,19 @@
          The array must store the same number of columns in each row.
     -->
     <string-array name="row1">
-        <item>A description of this place goes here.</item>
-        <item>A description of this place goes here.</item>
-        <item>A description of this place goes here.</item>
+        <item>This is a dead end, you can only return east.</item>
+        <item>You are now in a place that has a path leading west, south, and east.</item>
+        <item>This is a dead end, you can only return west.</item>
     </string-array>
     <string-array name="row2">
-        <item>A description of this place goes here.</item>
-        <item>A description of this place goes here.</item>
-        <item>A description of this place goes here.</item>
+        <item></item>
+        <item>You are in a place that has pathways leading north and south.</item>
+        <item></item>
     </string-array>
     <string-array name="row3">
-        <item>A description of this place goes here.</item>
-        <item>A description of this place goes here.</item>
-        <item>A description of this place goes here.</item>
+        <item>This is a dead end, you can only return east.</item>
+        <item>You are now in a place that has a path leading west, north, and east.</item>
+        <item>This is a dead end, you can only return west.</item>
     </string-array>
 
 </resources>
